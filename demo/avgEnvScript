@@ -1,0 +1,7 @@
+FROM ubuntu:22.04
+ENV WAY=/app/main
+ARG PORT=8080
+WORKDIR ${WAY}
+COPY file ${WAY}
+LABEL developer=chetan
+EXPOSE ${PORT}

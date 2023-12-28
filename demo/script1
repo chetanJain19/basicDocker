@@ -1,0 +1,10 @@
+FROM ubuntu:22.04
+COPY . .
+#WORKDIR /demoApp
+#COPY testScripts.sh /demoApp
+#CMD sh testScripts.sh 5 6
+#RUN chmod +x "/testScripts.sh"
+#ENTRYPOINT [ "/testScripts.sh" ]
+#CMD [ "5", "5" ]
+ENTRYPOINT [ "/bin/bash" ]
+
